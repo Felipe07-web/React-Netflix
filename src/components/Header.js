@@ -6,7 +6,7 @@ export default ({black}) => {
             <header className={black ? 'black': ''}>
                 <div className='header--logo'>
                     < a href='/'>
-                        <img src="https://i0.wp.com/assets.b9.com.br/wp-content/uploads/2016/06/netflix-logo-thumb.jpg?fit=1060%2C596&ssl=1"></img>
+                        <img src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=700&h=456"></img>
                     </a>
                 </div>
                 <div className="header--user">

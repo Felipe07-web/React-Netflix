@@ -25,10 +25,69 @@
     transition: all ease 02s;
 }
 
-.movieRow--list{
-    width: 9999999999px;
+.movieRow {
+    position: relative;
+    overflow: hidden;
 }
-.movieRow--item img:hover{
-    transform: scale(1);
+
+
+.movieRow {
+    position: relative;
+    overflow: hidden;
 }
+
+.movieRow--list {
+    display: flex;
+    transition: transform 0.5s ease; /* Transição suave */
+    will-change: transform; /* Melhora a performance durante a rotação */
+}
+
+.movieRow--item {
+    flex: 0 0 auto; /* Garante que os itens não se estiquem e fiquem alinhados corretamente */
+    margin-right: 15px; /* Espaço entre os itens */
+}
+
+.ListaFilmes--listarea {
+    overflow: hidden;
+    position: relative;
+}
+
+.movieRow--left,
+.movieRow--right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.movieRow--left {
+    left: 0;
+}
+
+.movieRow--right {
+    right: 0;
+}
+
+.movieRow:hover .movieRow--left,
+.movieRow:hover .movieRow--right {
+    opacity: 1;
+}
+
+@media (max-width:760){
+    .movieRow--left,
+    .movieRow--right {
+        opacity: 1;
+    }
+}
+
+
+
 
