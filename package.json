@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "homepage": "https://felipe07-web.github.io/React-Netflix/",
   "dependencies": {
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.7",
+    "gh-pages": "^5.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "5.0.0",
-    "gh-pages": "^5.0.0"
+    "react-scripts": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
